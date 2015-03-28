@@ -1,6 +1,6 @@
 Package.describe({
   name: 'gildaspk:meteor-account-oauth-forget-password',
-  version: '0.0.1',
+  version: '0.0.2',
   summary: 'Check for existing oauth account when user try to recover forgotten password',
   git: 'https://github.com/djhi/meteor-account-oauth-forget-password.git',
   // By default, Meteor will default to using README.md for documentation.

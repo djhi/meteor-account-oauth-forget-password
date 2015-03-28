@@ -14,7 +14,7 @@ forgotPasswordWithOAuthCheck = (options) ->
       filters = {}
       filters["services.#{service}.email"] = options.email
 
-      user = Meteor.users.findOne
+      user = Meteor.users.findOne filters
 
       if user then servicesFound.push service
       user = undefined

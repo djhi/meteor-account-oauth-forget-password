@@ -48,7 +48,7 @@ Template.mySignInTemplate.events({
     var email = "" // Get the email from your template
     Accounts.forgotPasswordWithOAuthCheck(email, function(error){
       if(error) {
-        if(error.servicesFound && error.servicesFound.length > 0 ) {
+        if(error.details && error.details.servicesFound) {
           alert("You have an account with one of these services: " + error.servicesFound.join(', '));
         } else {
           alert("No account found with this adress");
